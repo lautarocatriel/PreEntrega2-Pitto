@@ -10,14 +10,6 @@
     font-family:"montserrat-light" ;
     src: url(../assets/fonts/montserrat/Montserrat-Light.otf);
 }
-@font-face {
-    font-family: "montserrat-extralight";
-    src: url(../assets/fonts/montserrat/Montserrat-ExtraLight.otf);
-}
-@font-face {
-    font-family: "montserrat-extrabold";
-    src: url(../assets/fonts/montserrat/Montserrat-ExtraBold.otf);
-}
 .font__montserrat-medium{
     font-family: "montserrat-medium";
 }
