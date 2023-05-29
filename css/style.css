@@ -59,14 +59,7 @@ a:hover{
 #info-nuestra{
     height: 52  0px;
 }
-.carousel-caption{
-font-size: 10px;
-bottom: 1px;
-padding-bottom: 1px;
-}
-.carousel__font{
-    font-size: 10px;
-}
+
 #footer{
         margin-left: calc(-.0 * var(--bs-gutter-x));
 }
@@ -75,9 +68,31 @@ padding-bottom: 1px;
     width: 20px;
 
 }
+.carousel-caption{
+    font-size: 10px;
+    bottom: 1px;
+    padding-bottom: 1px;
+}
+.carousel__font{
+        font-size: 10px;
+}
+.form-control:not(textarea){
+    height: 35px;
+}
 
 @media (min-width: 992px) {
     #info-nuestra{
         height: 300px;
+    }
+}
+
+@media (min-width: 576px) {
+    .carousel__font, .carousel-caption{
+        font-size: 15px;
+    }
+}
+@media (min-width: 992px) {
+    .carousel__font, .carousel-caption{
+        font-size: 20px;
     }
 }
