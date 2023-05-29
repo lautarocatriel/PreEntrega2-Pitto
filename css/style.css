@@ -28,8 +28,20 @@ header{
     --bs-gutter-x: 0;
 }
 nav, body{
-    background-color: #031c55;
+    background-color: #031c55;  
 }   
+a:link{
+    color: white;
+}
+a:visited{
+    color: white;
+}
+a:hover{
+    background-color: red;
+}
+#logo:not(a){
+    background-color: #031c55;
+}
 .Nav__img-logo{
     width: 60px;
     height: 60px;
@@ -41,8 +53,11 @@ nav, body{
     --bs-gutter-x: 0;
 }
   
-.info__cards{
+.info-principal__cards{
     height: 300px ;
+}
+#info-nuestra{
+    height: 52  0px;
 }
 .carousel-caption{
 font-size: 10px;
@@ -52,10 +67,17 @@ padding-bottom: 1px;
 .carousel__font{
     font-size: 10px;
 }
-/* mediaqueris desktop
-a:hover{
-    background-color: red;
+#footer{
+        margin-left: calc(-.0 * var(--bs-gutter-x));
 }
-img:not(a){
-    background-color: #1d3557;
-} */
+.footer__img{
+    height: 20px;
+    width: 20px;
+
+}
+
+@media (min-width: 992px) {
+    #info-nuestra{
+        height: 300px;
+    }
+}
