@@ -71,6 +71,54 @@ a:hover{
 .form-control:not(textarea){
     height: 35px;
 }
+#grilla{
+    width: 100%;
+    height: 640px;
+    display: grid;
+    grid-template-areas: "producto-uno producto-dos"
+                         "producto-tres producto-cuatro";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 320px 320px;
+}
+#producto-uno{
+    grid-area: producto-uno;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    border-right: 1px solid red;
+}
+#producto-dos{
+    grid-area: producto-dos;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+#producto-tres{
+    grid-area: producto-tres;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    border-right: 1px solid red;
+}
+#producto-cuatro{
+    grid-area: producto-cuatro;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.productos__img{
+    height: 250px;
+    width: 220px;
+}
+.productos__font{
+    color: white;
+    font-family: "montserrat-light";
+}
+
 
 @media (min-width: 992px) {
     #info-nuestra{
@@ -78,6 +126,9 @@ a:hover{
     }
     .carousel__font, .carousel-caption{
         font-size: 20px;
+    }
+    .nav__link--font{
+        font-size: 13px;
     }
 }
 
