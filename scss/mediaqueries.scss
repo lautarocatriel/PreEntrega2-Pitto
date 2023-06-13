@@ -1,0 +1,54 @@
+@media (min-width: 576px) {
+    .carousel__font, .carousel-caption{
+        font-size: 15px;
+    }
+    .contacto__caja--input{
+        width: 400px;
+        margin-left: 20px;
+    }
+    .contacto__caja--texteara{
+        width: 400px;
+        margin-left: 20px;
+    }
+}
+@media (min-width:768px){
+    #grilla__nosotros{
+        grid-template-areas: 100px 500px;
+        height: 690px;
+    }
+    .contacto{
+     height: 400px;
+    }
+    .contacto__caja{
+        flex-wrap: wrap;
+        align-content: space-around;
+        height: 400px;
+    }
+    .contacto__caja--input{
+        width: 350px;
+        margin-left: 20px;
+    }
+    .contacto__caja--texteara{
+    width: auto;
+    margin-left: 0px;
+    }
+}
+@media (max-width:1199px){
+    nav{
+        font-size: 13px;
+    }
+}
+@media (min-width: 992px) {
+    #info-nuestra{
+        height: 300px;
+    }
+    .carousel__font, .carousel-caption{
+        font-size: 20px;
+    }
+    .nav__link--font{
+        font-size: 13px;
+    }
+    #grilla__selecciones{
+        height: 690px;
+    }
+}
