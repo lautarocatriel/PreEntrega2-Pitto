@@ -1,0 +1,24 @@
+header{
+    --bs-gutter-x: 0;
+}
+nav, body{
+    background-color: $color-principal;  
+}
+a{
+&:link{
+    color: $color-white;
+}
+&:visited{
+    color: $color-white;
+}
+&:hover{
+    background-color: $color-secundario;
+}
+}
+#logo:not(a){
+    background-color:$color-principal;
+}
+.Nav__img-logo{
+    width: 60px;
+    height: 60px;
+}
