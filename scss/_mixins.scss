@@ -1,0 +1,13 @@
+@mixin wid-hei($width, $height){
+width: $width ;
+height: $height ;
+}
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin gradient ($color, $color2, $color3){
+    background: linear-gradient(90deg, $color, $color2, $color3);
+ }

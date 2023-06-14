@@ -1,8 +1,7 @@
 .card-principal{
     &__fondo{
+        @include wid-hei(100%, 350px);
         background-image: url(../assets/img/fondo.jpg);
-        width: 100%;
-        height: 350px;
         --bs-gutter-x: 0;
         font-family: $font-montserrat-medium;
     }
@@ -45,8 +44,8 @@
     height: 35px;
 }
 #grilla__selecciones{
-    width: 100%;
-    height: 640px;
+    @include wid-hei(100%, 640px);
+    @include gradient ($color-principal 0%, $color-terciario 50%, $color-principal 100%);
     display: grid;
     grid-template-areas: "producto-uno producto-dos"
                          "producto-tres producto-cuatro";
@@ -54,39 +53,28 @@
     grid-template-rows: 320px 320px;
 }
 .productos{
+    @include flex(column, none ,center);
+    padding-top: 10px;
     &-uno{
         grid-area: producto-uno;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 10px;
+        @extend .productos;
         border-right: 1px solid $color-secundario;
     }
     &-dos{
         grid-area: producto-dos;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 10px;
+        @extend .productos;
     }
     &-tres{
         grid-area: producto-tres;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 10px;
+        @extend .productos;
         border-right: 1px solid $color-secundario;
     }
     &-cuatro{
         grid-area: producto-cuatro;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 10px;
+        @extend .productos;
     }
     &__img{
-        height: 250px;
-        width: 220px;
+        @include wid-hei(220px, 250px);
     }
     &__font{
         color: $color-white;
@@ -94,8 +82,7 @@
     }   
 }
 .grilla__messi{
-    width: 100%;
-    height: 4fr;
+    @include wid-hei(100%, 4fr);
     display: grid;
     grid-template-areas: "titulo-messi"
                          "mundial"
@@ -106,9 +93,10 @@
     border-top: 1px solid $color-secundario;
     &--imgs{
         width: 100%;
-    }
+    } 
 }
 #titulo-messi{
+    @include gradient ( $color-terciario 0%, $color-principal 100%, $color-principal 100%);
     grid-area: titulo-messi;
     padding-top: 30px;
     color:$color-secundario;
@@ -136,37 +124,28 @@
 }
 #titulo-nosotros{
     grid-area: titulo-nosotros;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(none, center, center);
     color: $color-secundario;
     font-family: $font-montserrat-medium;
 }   
 .contacto{
     font-family: $font-montserrat-light;
     grid-area: contacto;
-    display: flex;
-    justify-content: center;
+    @include flex(none, center, none);
     &__caja{
-        width: 800px;
-        height: 800px;
+        @include wid-hei(800px, 800px);
+        @include flex(column, space-evenly, none);
+        @include gradient ($color-principal 0%, $color-principal 0%, $color-terciario 100%);
         background-color: $color-principal;
         border-radius: 30px;
         border: 2px solid $color-secundario;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        /* flex-wrap:wrap ; */
-        /* align-content: space-around; */
         &--input{
-            width: 340px;
+            @include wid-hei(340px, 40px);
             margin-left: 10px;
-            height: 40px;
             margin-bottom: 30px;
         }
         &--texteara{
-            height: 200px;
-            width: 340px;
+            @include wid-hei(200px, 340px);
             margin-left: 10px;
         }
 }

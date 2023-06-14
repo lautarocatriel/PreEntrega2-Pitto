@@ -20,6 +20,5 @@ a{
     background-color:$color-principal;
 }
 .Nav__img-logo{
-    width: 60px;
-    height: 60px;
+    @include wid-hei(60px, 60px);
 }

@@ -1,7 +1,6 @@
 .footer{
     margin-left: calc(-.0 * var(--bs-gutter-x));
     &__img{
-        height: 20px;
-        width: 20px;
+        @include wid-hei(20px, 20px);
     }    
 }   
