@@ -97,6 +97,7 @@
 }
 #titulo-messi{
     @include gradient ( $color-terciario 0%, $color-principal 100%, $color-principal 100%);
+    animation: titulos 2s linear 0s 1 alternate forwards;
     grid-area: titulo-messi;
     padding-top: 30px;
     color:$color-secundario;
@@ -109,6 +110,7 @@
     color:$color-secundario;
     padding-top: 15px;
     font-family: $font-montserrat-medium;
+    h3{animation: titulos 2.5s linear 0s 1 alternate forwards;}
 }
 #copa-america{
     grid-area: copa-america;

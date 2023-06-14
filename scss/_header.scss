@@ -21,4 +21,5 @@ a{
 }
 .Nav__img-logo{
     @include wid-hei(60px, 60px);
+    animation: pelota 2s linear 0s 1 alternate forwards;
 }
