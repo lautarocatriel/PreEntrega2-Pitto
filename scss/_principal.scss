@@ -83,6 +83,7 @@
 }
 .grilla__messi{
     @include wid-hei(100%, 4fr);
+    h3{padding-left: 5px;}
     display: grid;
     grid-template-areas: "titulo-messi"
                          "mundial"
@@ -145,10 +146,12 @@
             @include wid-hei(340px, 40px);
             margin-left: 10px;
             margin-bottom: 30px;
+            padding: 10px
         }
         &--texteara{
             @include wid-hei(200px, 340px);
             margin-left: 10px;
+            padding: 10px;
         }
 }
 }
